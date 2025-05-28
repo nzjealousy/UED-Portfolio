@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="top-nav">
+    <div class="logo">My Portfolio</div>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#projects">Projects</a>
+      <a href="#profile">Profile</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#projects">Projects</a>
+    <a href="#profile">Profile</a>
+    <a href="#contact">Contact</a>
+  </aside>
+
+  <main>
+    <section id="home" class="section" data-aos="fade-up">Welcome to my interactive portfolio!</section>
+    <section id="about" class="section" data-aos="fade-up">About Me Content</section>
+
+    <section id="courses" class="section" data-aos="fade-up">
+      <h2>Courses</h2>
+      <div class="courses-container">
+        <div class="course-card" onclick="openModal('Web Development')">Web Development</div>
+        <div class="course-card" onclick="openModal('JavaScript')">JavaScript</div>
+        <div class="course-card" onclick="openModal('UI/UX Design')">UI/UX Design</div>
+        <div class="course-card" onclick="openModal('React Basics')">React Basics</div>
+        <div class="course-card" onclick="openModal('DevOps')">DevOps</div>
+        <div class="course-card" onclick="openModal('Node.js')">Node.js</div>
+        <div class="course-card" onclick="openModal('Tailwind CSS')">Tailwind CSS</div>
+      </div>
+    </section>
+
+    <section id="projects" class="section" data-aos="fade-up">Projects Content</section>
+
+    <section id="profile" class="section" data-aos="fade-up">
+      <h2>Student Profile</h2>
+      <div class="profile-container">
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>Faculty:</strong> Computer Science</p>
+        <p><strong>Program:</strong> CS110</p>
+        <p><strong>Year of Intake:</strong> 2023</p>
+        <p><strong>IC Number:</strong> 010101-01-0101</p>
+        <p><strong>Student ID:</strong> 2023123456</p>
+        <p><strong>Phone:</strong> 012-3456789</p>
+        <p><strong>Email:</strong> johndoe@email.com</p>
+        <p><strong>Advisor:</strong> Dr. Jane Smith</p>
+        <hr />
+        <p><strong>Father's Name:</strong> Mr. Doe</p>
+        <p><strong>Mother's Name:</strong> Mrs. Doe</p>
+        <p><strong>Race:</strong> Malay</p>
+        <p><strong>Religion:</strong> Islam</p>
+        <p><strong>Gender:</strong> Male</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+        <p id="form-msg"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modal-body">Course details go here...</div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
