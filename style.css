@@ -161,3 +161,22 @@ body {
     display: block;
   }
 }
+
+.ued102-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.ued-item {
+  background-color: #4b0082;
+  padding: 1rem;
+  border: 1px solid #ffd700;
+  border-radius: 8px;
+  color: white;
+}
+
+.ued-item h3 {
+  color: #ffd700;
+}
