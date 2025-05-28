@@ -1,3 +1,4 @@
+
 // Sidebar toggle
 document.getElementById("hamburger").addEventListener("click", () => {
   const sidebar = document.getElementById("sidebar");
@@ -9,7 +10,7 @@ document.getElementById("hamburger").addEventListener("click", () => {
 function openModal(courseName) {
   const modal = document.getElementById("modal");
   const modalBody = document.getElementById("modal-body");
-  modalBody.innerHTML = `<h3>${courseName}</h3><p>This course covers essential concepts in ${courseName} including practical activities, assignments, and real-world applications.</p>`;
+  modalBody.innerHTML = `<h3>${courseName}</h3><p>This course covers essential concepts in ${courseName}, including activities, assessments, and real-world applications.</p>`;
   modal.style.display = "block";
 }
 function closeModal() {
@@ -19,9 +20,12 @@ function closeModal() {
 // Animate on scroll
 AOS.init();
 
-// Form handling
-document.getElementById("contact-form").addEventListener("submit", function (e) {
-  e.preventDefault();
-  document.getElementById("form-msg").innerText = "Thank you for reaching out!";
-  this.reset();
+// UED102 collapsible section
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".collapsible").forEach(button => {
+    button.addEventListener("click", () => {
+      const content = button.nextElementSibling;
+      content.style.display = content.style.display === "block" ? "none" : "block";
+    });
+  });
 });

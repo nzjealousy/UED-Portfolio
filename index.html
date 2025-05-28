@@ -35,54 +35,58 @@
     <section id="about" class="section" data-aos="fade-up">About Me Content</section>
 
     <section id="courses" class="section" data-aos="fade-up">
-      <h2>Courses</h2>
+      <h2 class="section-title">Courses</h2>
       <div class="courses-container">
-        <div class="course-card" onclick="openModal('Web Development')">Web Development</div>
-        <div class="course-card" onclick="openModal('JavaScript')">JavaScript</div>
-        <div class="course-card" onclick="openModal('UI/UX Design')">UI/UX Design</div>
-        <div class="course-card" onclick="openModal('React Basics')">React Basics</div>
-        <div class="course-card" onclick="openModal('DevOps')">DevOps</div>
-        <div class="course-card" onclick="openModal('Node.js')">Node.js</div>
-        <div class="course-card" onclick="openModal('Tailwind CSS')">Tailwind CSS</div>
+        <div class="course-card" onclick="openModal('Web Development')">
+          <img src="images/web-dev.jpg" alt="Web Development" />
+          <div class="course-title">Web Development</div>
+        </div>
+        <div class="course-card" onclick="openModal('JavaScript')">
+          <img src="images/javascript.jpg" alt="JavaScript" />
+          <div class="course-title">JavaScript</div>
+        </div>
+        <div class="course-card" onclick="openModal('UI/UX Design')">
+          <img src="images/uiux.jpg" alt="UI/UX Design" />
+          <div class="course-title">UI/UX Design</div>
+        </div>
+        <div class="course-card" onclick="openModal('React Basics')">
+          <img src="images/react.jpg" alt="React Basics" />
+          <div class="course-title">React Basics</div>
+        </div>
+        <div class="course-card" onclick="openModal('DevOps')">
+          <img src="images/devops.jpg" alt="DevOps" />
+          <div class="course-title">DevOps</div>
+        </div>
+        <div class="course-card" onclick="openModal('Node.js')">
+          <img src="images/nodejs.jpg" alt="Node.js" />
+          <div class="course-title">Node.js</div>
+        </div>
+        <div class="course-card">
+          <img src="images/ued102.jpg" alt="UED102" />
+          <div class="course-title">UED102</div>
+          <button class="collapsible">View Topics</button>
+          <div class="content">
+            <ol>
+              <li>Learning Style Inventory</li>
+              <li>Goal Statements – The Five Step Approach</li>
+              <li>Fixed-Commitment Calendar</li>
+              <li>Job Task Analysis</li>
+              <li>Prioritized To-Do List</li>
+              <li>Memory Strategies (Activity 4-1: Van Blerkom, 2009, pg. 90)</li>
+              <li>Organizational Strategies (Activity 4.7: Van Blerkom, 2009, pg. 107)</li>
+              <li>Concentration Strategies (Activity 6.1: Van Blerkom, 2009, pg. 144)</li>
+              <li>Concentration Chart (Figure 6.4: Van Blerkom, 2009, pg. 161)</li>
+              <li>Reading Text (Figure 12.3: Van Blerkom, 2009, pg. 309)</li>
+              <li>Note-Taking Strategies (Activity 5-1: Van Blerkom, 2009, pg. 116)</li>
+              <li>Note-taking Exercise using the Cornell Method</li>
+              <li>GPA Worksheet</li>
+            </ol>
+          </div>
+        </div>
       </div>
-    </section>
-
-    <section id="projects" class="section" data-aos="fade-up">Projects Content</section>
-
-    <section id="profile" class="section" data-aos="fade-up">
-      <h2>Student Profile</h2>
-      <div class="profile-container">
-        <p><strong>Name:</strong> John Doe</p>
-        <p><strong>Faculty:</strong> Computer Science</p>
-        <p><strong>Program:</strong> CS110</p>
-        <p><strong>Year of Intake:</strong> 2023</p>
-        <p><strong>IC Number:</strong> 010101-01-0101</p>
-        <p><strong>Student ID:</strong> 2023123456</p>
-        <p><strong>Phone:</strong> 012-3456789</p>
-        <p><strong>Email:</strong> johndoe@email.com</p>
-        <p><strong>Advisor:</strong> Dr. Jane Smith</p>
-        <hr />
-        <p><strong>Father's Name:</strong> Mr. Doe</p>
-        <p><strong>Mother's Name:</strong> Mrs. Doe</p>
-        <p><strong>Race:</strong> Malay</p>
-        <p><strong>Religion:</strong> Islam</p>
-        <p><strong>Gender:</strong> Male</p>
-      </div>
-    </section>
-
-    <section id="contact" class="section" data-aos="fade-up">
-      <h2>Contact Me</h2>
-      <form id="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-        <p id="form-msg"></p>
-      </form>
     </section>
   </main>
 
-  <!-- Modal -->
   <div class="modal" id="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
