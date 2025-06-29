@@ -1,0 +1,340 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  width: auto;
+}
+header {
+  background-color: #36005f;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: auto;
+  background-image: linear-gradient(#8459f9, #4c3196);
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.nav-links li a:hover {
+  color: #00f7ff;
+}
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Main Content */
+.container {
+  padding: 0rem;
+  max-width: 1200px;
+  margin: auto;
+}
+.list {
+  max-width: 50vh;
+  max-height: 50vh;
+  font-size: 21px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+.box {
+  justify-content: space-evenly;
+  display: flex;
+  border: 5px solid black;
+  background: linear-gradient(#8459f9c2, #4c3196c5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.3px);
+  -webkit-backdrop-filter: blur(5.3px);
+  border: 1px solid rgba(120, 0, 187, 0.11);
+}
+.me {
+  max-width: 50vh;
+  right: 0;
+  max-height: 50vh;
+  border-radius: 50%;
+  border: 5px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.section {
+  padding: 2rem;
+  border-bottom: 1px solid #ccc;
+  min-height: 100vh; /* ✅ optional: allows it to be at least screen height but grow with content */
+}
+
+.section:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.text {
+  font-size: 25px;
+  margin: 10px;
+  text-align: center;
+}
+.text1 {
+  font-size: 20px;
+  margin: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+
+  text-align: center;
+}
+.topic1 {
+  width: 500px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+}
+.table {
+  align-items: center;
+  font-size: x-large;
+}
+.vak {
+  height: 60%;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+}
+.row-button {
+  justify-items: center;
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #8459f9c2;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 11%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 20px;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+  background-color: #8459f975;
+  border-color: #000;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+th,
+td {
+  border: 2px solid black;
+  padding: 12px;
+  vertical-align: top;
+}
+th {
+  background: linear-gradient(#8459f9c2, #4c3196c5);
+  color: #2d0353;
+  font-size: 18px;
+}
+td {
+  font-size: 16px;
+}
+.container1 {
+  border: 2px solid #000;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.section-title {
+  font-weight: bold;
+  margin-top: 20px;
+}
+table1 {
+  width: 100%;
+  border-collapse: collapse;
+}
+td {
+  vertical-align: top;
+  padding: 10px;
+  width: 50%;
+}
+ol {
+  margin: 0;
+  padding-left: 20px;
+}
+.underline {
+  border-bottom: 1px solid #000;
+  display: inline-block;
+}
+.step {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+hr.rounded {
+  border-top: 8px solid #8459f9c2;
+  border-radius: 5px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th,
+td {
+  border: 1px solid #004080;
+  padding: 8px;
+  text-align: center;
+  vertical-align: top;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  border-top: 2px solid #004080;
+  border-bottom: 2px solid #004080;
+}
+
+tr:last-child td {
+  border-bottom: 2px solid #004080;
+}
+/* Footer */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    width: 533px;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .list {
+    max-width: 50vh;
+    max-height: 50vh;
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-right: auto;
+  }
+  .box {
+    justify-content: space-evenly;
+    display: grid;
+    border: 5px solid black;
+    max-width: max-content;
+  }
+  .me {
+    max-width: 50vh;
+    right: 0;
+    max-height: 50vh;
+    border-radius: 50%;
+    border: 5px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header {
+    background-color: #36005f;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: auto;
+    background-image: linear-gradient(#8459f9, #4c3196);
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+  }
+  .text {
+    font-size: 20px;
+  }
+  .topic1 {
+    width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+  }
+}
